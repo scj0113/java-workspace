@@ -49,7 +49,7 @@ public class C_Printf {
 		System.out.printf("%f\t%f\n", dNum1, dNum2);
 		
 		// 소수점 아래 보여주고자 하는만큼 조절가능 
-		System.out.printf("%.3f\t%.2f\n", dNum1, dNum2);
+		System.out.printf("%.3f\t%.2f\n ", dNum1, dNum2);
 		
 		
 		
