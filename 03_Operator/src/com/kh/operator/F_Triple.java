@@ -26,7 +26,7 @@ public class F_Triple {
 		F_Triple f = new F_Triple(); 	
 		
 	//	f.method1();
-    //    f.practice1();
+    //  f.practice1();
         f.practice2();
 	}
 

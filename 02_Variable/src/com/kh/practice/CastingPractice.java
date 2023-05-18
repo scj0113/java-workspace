@@ -9,8 +9,8 @@ public class CastingPractice {
 		
 		CastingPractice sc = new CastingPractice();
 		
-		//sc.method1();
-          sc.method2();     
+		  sc.method1();
+        //  sc.method2();     
 	}
 		
 		public void method1() {
@@ -20,9 +20,7 @@ public class CastingPractice {
 		System.out.print("문자 : ");
 		
 		char ch = sc.nextLine().charAt(0);
-					
-	    int num1 =  ch;
-		
+						
 	    System.out.println("A unicode : "+ (int) ch  );
 	    
 	    System.out.println("B unicode : " + ((int)ch+1));
@@ -43,13 +41,14 @@ public class CastingPractice {
 			System.out.print("수학 : ");
 			int ma =  sc.nextInt();	
 			
+	
 			
 			int to = (ko+en+ma);
 			
 			
 			System.out.println("총점 : " + to );
 		
-		    System.out.printf("평균 : " + (double) to/3); 
+		    System.out.printf("평균 : %.2f" , (double) to/3); 
 		    
 		    
 		    
