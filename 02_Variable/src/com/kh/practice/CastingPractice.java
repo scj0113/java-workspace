@@ -9,7 +9,7 @@ public class CastingPractice {
 		
 		CastingPractice sc = new CastingPractice();
 		
-		  sc.method1();
+		//  sc.method1();
         //  sc.method2();     
 	}
 		
@@ -21,11 +21,11 @@ public class CastingPractice {
 		
 		char ch = sc.nextLine().charAt(0);
 						
-	    System.out.println("A unicode : "+ (int) ch  );
+	    System.out.println( (char) ch +" unicode : "+ (int) ch  );    // A 부분 char <-> 형변환 사용해보세요!
 	    
-	    System.out.println("B unicode : " + ((int)ch+1));
+	    System.out.println((char) (ch+1) +" unicode : " + ((int)ch+1));  // B 부분도!
 	    
-	    
+	    // 형변환 해봤습니다!
 	    
 		}
 		public void method2() {
