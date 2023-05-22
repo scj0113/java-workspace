@@ -15,15 +15,15 @@ public class ConditionPractice {
 		
 		
 		
-	//	c.practice1();     //대기
+	//	c.practice1();     
 	//	c.practice2();
 	//	c.practice3();     
-	//	c.practice4();     //대기
+	//	c.practice4();          
 	//	c.practice5();     
 	//	c.practice6();
 	//	c.practice7();     
 	//	c.practice8();
-	//	c.practice9();
+	//	c.practice9();     
 	//	c.practice10();
 	//	c.practice11();    
 	
@@ -46,7 +46,14 @@ public class ConditionPractice {
         System.out.print("정수 > ");
         int num=sc.nextInt();
         
-       
+       if(num%2 != 1 && num > 0) {
+    	   System.out.println("짝수다");
+       }else if(num%2 != 0 && num > 0) {
+    	   System.out.println("홀수다");
+    		   
+    	   }else { 
+    		   System.out.println("양수만 입력해주세요."); 
+    	   }
    
     	
     	
@@ -148,7 +155,32 @@ public class ConditionPractice {
     	int ma = sc.nextInt();	
     	
  
+    	double aver = (ko+en+ma)/3;
     	
+    	int to = (ko+en+ma);
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	if(ko <= 40) {
+    		System.out.println("불합격입니다.");
+    	}else if(en <= 40) {
+    		System.out.println("불합격입니다.");
+    	}else if(ma <= 40) {
+    		System.out.println("불합격입니다.");
+    	}else if(aver >= 60) {
+    	System.out.println("국어 : "+ko);	
+    	System.out.println("수학 : "+ma);	
+    	System.out.println("영어 : "+en);	
+    	System.out.println("합계 : "+to);	
+    	System.out.println("평균 : "+aver);	
+    	System.out.println("축하합니다, 합격입니다!");	
+    	} else {
+    		System.out.println("불합격입니다.");
+    	}
     	
     	
     	
@@ -341,17 +373,34 @@ public class ConditionPractice {
      */
     public void practice9() {
     	
+    	String va = "";
+    	
+    	
     	
     	System.out.print("피연산자1 입력 : ");
     	int num1 = sc.nextInt();
     	System.out.print("피연산자2 입력 : ");
     	int num2 = sc.nextInt();
     	System.out.print("연산자를 입력(+,-,*,/,%) : ");
-    	String va = sc.nextLine();
-    	
-    	
-    	
-    	
+    	 va = sc.next();
+  	 
+    	int a =num1+num2;
+    	int b = num1-num2;
+    	int c = num1*num2;
+    	int d = num1/num2;
+    	int e = num1%num2;
+    	 
+    	if("+".equals(va)) { 
+    	System.out.println(num1+" "+va+" "+num2+" = "+a);
+    	} else if("-".equals(va)) {
+    		System.out.println(num1+" "+va+" "+num2+" = "+b);	
+    	} else if("*".equals(va)) {
+    		System.out.println(num1+" "+va+" "+num2+" = "+c);	
+    	} else if("/".equals(va)) {
+    		System.out.println(num1+" "+va+" "+num2+" = "+d);
+    	} else if("%".equals(va)) {
+    		System.out.println(num1+" "+va+" "+num2+" = "+e);
+    	}
     	
     	
     	
@@ -471,7 +520,7 @@ public class ConditionPractice {
     		System.out.println("중간 고사 점수(20) : "+middle1);
     		System.out.println("기말 고사 점수(30) : "+last1);
     		System.out.println("과제 점수(30) : "+test1);
-    		System.out.println("출석 점수(20) : "+middle1);
+    		System.out.println("출석 점수(20) : "+(double)work);
     		System.out.println("총점 : "+to); 		
     		System.out.println("Pass");
     	}else if (work < 14 ){

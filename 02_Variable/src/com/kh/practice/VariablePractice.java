@@ -41,20 +41,48 @@ public class VariablePractice {
 		// 임시 변수를 하나 만들어서 직접 숫자가 들어가는 것이 아닌 변수들만 사용해보세요!
 		
 		
-		int adult = 10000;
-		int student = 7000;
-		
-		int at = adult*2;
-		int st = student*3;
-		
-		int to = at+st;
+//		int adult = 10000;
+//		int student = 7000;
+//		
+//		int at = adult*2;
+//		int st = student*3;
+//		
+//		int to = at+st;
+//	
+//		
+//		System.out.println("성인 2명 : " + at);
+//		System.out.println("청소년 3명 : " + st);
+//		System.out.println();
+//		System.out.println("총 금액 : "+to);
 	
 		
-		System.out.println("성인 2명 : " + at);
-		System.out.println("청소년 3명 : " + st);
+		
+		
+		
+		System.out.print("성인 수 : ");
+		int adult = sc.nextInt();
+		System.out.print("청소년 수 : ");
+		int student = sc.nextInt();
+		
+		int sum = adult*10000;
+		int sum2 = student*7000;
+		
+		System.out.println("성인 "+adult + "명 : "+sum+"원");
+		
+		System.out.println("청소년 "+student + "명 : "+sum2+"원");
+		
 		System.out.println();
-		System.out.println("총 금액 : "+to);
-	
+		System.out.println("총 금액 : "+(sum+sum2)+"원");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -103,9 +131,7 @@ public class VariablePractice {
 			
 		Scanner sc = new Scanner(System.in);
 		
-		int num = 0;
-		
-		
+	
 	
 		
 		System.out.print("문자열을 입력하세요 : ");
@@ -113,10 +139,11 @@ public class VariablePractice {
 	System.out.println("첫번째 문자 : " + num1.charAt(0));
 	char first = num1.charAt(0);
 	
-	num = num1.length();
+	int num = num1.length();
+	
 	
 	System.out.println("마지막 문자 : " + num1.charAt(num));
-		
+	char last =  num1.charAt(0);	
 			
 	
 	

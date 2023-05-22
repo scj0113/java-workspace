@@ -152,34 +152,130 @@ public class D_While {
 	
 	public void method5() {
 		
-		int number = 0;
-
-		double random = Math.random();
-
-		random = Math.random() * 100 + 1;
-
-		int quiz = (int) random;
-
-		int count = 0;
-
-		while (quiz != number) {                                   // 랜덤된 숫자와 입력한 숫자가 맞지않으면 반복실행
-			System.out.print("1과 100 사이의 값 입력 > ");             // 숫자 입력을 위한 출력
-			number = sc.nextInt();                                 // 입력한 숫자 number 생성
-			if (number > quiz) {                                   // if문 활용 입력한숫자(number) > 랜덤된 숫자(quiz) 보다 작을시 
-				System.out.println("더 작은 수를 입력하세요.");          // 출력되는 문구 생성
-			} else if (number < quiz) {                            // 입력한숫자(number) > 랜덤된 숫자(quiz) 보다 클시 
-				System.out.println("더 큰 수를 입력하세요.");           // 출력되는 문구 생성
-
-			}
-
-			count++;                                               //  횟수 찾는방법은 랜덤된 숫자와 입력한 숫자가 맞지않으면 반복실행되므로 
-		}                                                          // count라는 변수 생성하여 증감연산자 사용 (반복실행마다 count변수 숫자 증감)
-
-		System.out.println(count + "번 만에 맞췄습니다. 정답은 : "+ quiz+"입니다."); // 정답시 while문에서 나오면서 증감되었던 count변수 숫자가 횟수가 됨
+//		int number = 0;
+//
+//		double random = Math.random();
+//
+//		random = Math.random() * 100 + 1;
+//
+//		int quiz = (int) random;
+//
+//		int count = 0;
+//
+//		while (quiz != number) {                                   // 랜덤된 숫자와 입력한 숫자가 맞지않으면 반복실행
+//			System.out.print("1과 100 사이의 값 입력 > ");             // 숫자 입력을 위한 출력
+//			number = sc.nextInt();                                 // 입력한 숫자 number 생성
+//			if (number > quiz) {                                   // if문 활용 입력한숫자(number) > 랜덤된 숫자(quiz) 보다 작을시 
+//				System.out.println("더 작은 수를 입력하세요.");          // 출력되는 문구 생성
+//			} else if (number < quiz) {                            // 입력한숫자(number) > 랜덤된 숫자(quiz) 보다 클시 
+//				System.out.println("더 큰 수를 입력하세요.");           // 출력되는 문구 생성
+//
+//			}
+//
+//			count++;                                               //  횟수 찾는방법은 랜덤된 숫자와 입력한 숫자가 맞지않으면 반복실행되므로 
+//		}                                                          // count라는 변수 생성하여 증감연산자 사용 (반복실행마다 count변수 숫자 증감)
+//
+//		System.out.println(count + "번 만에 맞췄습니다. 정답은 : "+ quiz+"입니다."); // 정답시 while문에서 나오면서 증감되었던 count변수 숫자가 횟수가 됨
 
 	}
 	
 	
+	
+	
+	
+	
+//	int answer = (int)(Math.random() * 100) +1;
+//	int input = 0;
+//	int count = 0;
+//	
+//		while(true) {
+//			count++;
+//			System.out.print("1과 100사이의 값 입력 > ");
+//			input = sc.nextInt();
+//			
+//			if(answer > input) {
+//				System.out.println("더 큰 수를 입력하세요.");
+//			} else if(answer < input) {
+//				System.out.println("더 작은 수를 입력하세요.");
+//			}else {
+//				System.out.println(count + "번 만에 맞췄습니다.");
+//				break;
+//			}
+//		}
+	
+	
+	
+	/* 
+	 * -------------------------------
+	 * 1. 예금  2. 출금  3. 잔고  4. 종료
+	 * -------------------------------
+	 * 선택 > 1 
+	 * 예금액 > 5000
+	 * 
+	 * -------------------------------
+	 * 1. 예금  2. 출금  3. 잔고  4. 종료
+	 * -------------------------------
+	 * 선택 > 2
+	 * 출금액 > 2000
+	 * 
+	 * -------------------------------
+	 * 1. 예금  2. 출금  3. 잔고  4. 종료
+	 * -------------------------------
+	 * 선택 > 3
+	 * 잔고 > 3000
+	 * 
+	 * -------------------------------
+	 * 1. 예금  2. 출금  3. 잔고  4. 종료
+	 * -------------------------------
+	 * 선택 > 4
+	 * 프로그램 종료
+	 * 
+	 * */
+	
+	
+	public void method6() {
+	
+        int balance = 0;
+		boolean run = true;
+		
+		while(run) {
+		
+		System.out.println("-------------------------------");
+		System.out.println("1. 예금  2. 출금  3. 잔고  4. 종료");
+		System.out.println("-------------------------------");
+		
+		
+		System.out.print("선택 > ");
+		int menu = Integer.parseInt(sc.nextLine());      
+		
+		// Integer.parseInt : Integer 클래스의 parseInt 메소드
+		// String -> int
+		
+		
+		switch(menu) {
+		case 1:
+			System.out.print("예금액 > ");
+			balance += Integer.parseInt(sc.nextLine());
+			break;
+		case 2:
+			System.out.print("출금액 > ");
+			balance -= Integer.parseInt(sc.nextLine());
+			break;
+		case 3:
+			System.out.print("잔고 > ");
+			System.out.println(balance);
+			break;
+		case 4:
+			run = false;
+			break;
+			
+		}
+		
+	}
+		System.out.print("프로그램 종료");
+	}	
+	
+
 	
 	
 	public static void main(String[] args) {
@@ -189,7 +285,8 @@ public class D_While {
 //		d.method2();
 //		d.method3();
 //		d.method4();
-		d.method5();
+//		d.method5();
+//		d.method6();		
 		
 	}
 
