@@ -15,7 +15,7 @@ public class ArrayPractice {
 	
 //	a.method1();
 //	a.method2();
-	a.method3();
+//	a.method3();
 //	a.method4();
 //	a.method5();
 	}
@@ -116,10 +116,28 @@ public class ArrayPractice {
 	public void method4() {
 		
 		System.out.print("주민등록번호 : ");
-		int number = sc.nextInt();
-		
-		
-		
+		String num = sc.nextLine();
+
+		char[] arr = new char[14];
+
+		for (int i = 0; i < arr.length; i++) {
+
+			arr[i] = num.charAt(i);
+		}
+		char[] copy = arr.clone();
+
+		for (int i = 0; i < copy.length; i++) {
+
+			if (i < 8) {
+				copy[i] = num.charAt(i);
+
+			} else {
+				copy[i] = '*';
+			}
+		}
+		for (int i = 0; i < copy.length; i++) {
+			System.out.print(copy[i]);
+		}
 		
 		
 		

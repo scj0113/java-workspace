@@ -12,7 +12,7 @@ class LoopPractice {
 //	     l.method1();
 //	     l.method2();
 //	     l.method3();
-//	     l.method4();
+	     l.method4();
 //	     l.method5();
 //	     l.method6();
 	
@@ -50,6 +50,22 @@ class LoopPractice {
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
     	
+    	
+    	
+    	int sum = 0;
+    	int num = 0;
+    	
+    	while(sum<100) {
+            ++num;
+            if(num%2==0) sum-=num;
+            else sum+=num;
+            
+        }
+    	
+    	System.out.println(num+"까지 더했을때 총합이 "+sum+"이상이 된다.");
+    	
+    	
+    	
 
     	}
     	
@@ -64,6 +80,26 @@ class LoopPractice {
 
     */
     public void method3() {
+    	
+    	int num = 0;
+    	
+    	int count = 0;
+    	
+    	System.out.print("문자열을 입력하시오 > ");
+    	String str = sc.nextLine();
+    	
+    	System.out.print("검색할 문자를 입력하시오 > ");
+    	String str1 = sc.nextLine();
+    	
+        int str2 = str.length();	
+
+   		while(str.equals(str1)) {
+   			for(int i = 0; i>str2; i++) {
+   				
+   			}
+   			count++;
+   		}
+   		System.out.println(str+" 안에 포함된 "+str1+" 개수 : "+count);
 
     }
 
@@ -78,6 +114,28 @@ class LoopPractice {
         0
      */
     public void method4() {
+    	
+    	
+    	double random = Math.random();   	
+    	 random = Math.random()*10;    	
+    	 int number=(int) random;
+    	 
+    	
+    	for(int i = 0; i != number; ) {
+    		
+    		if(number!=0) {
+    			System.out.println(number);
+    			
+    		}else {
+    			break;
+    		}
+    	}
+    	
+    	
+    	
+    	
+    	
+    	
 
     }
 
@@ -93,6 +151,11 @@ class LoopPractice {
 
      */
     public void method5() {
+    	
+    	
+    	
+    	
+    	
 
     }
 
@@ -119,6 +182,10 @@ class LoopPractice {
         이겼습니다 !
     */
     public void method6() {
+    	
+    	
+    	
+    	
 
     }
 
