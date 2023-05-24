@@ -12,8 +12,8 @@ class LoopPractice {
 //	     l.method1();
 //	     l.method2();
 //	     l.method3();
-	     l.method4();
-//	     l.method5();
+//	     l.method4();
+	     l.method5();
 //	     l.method6();
 	
 	
@@ -81,30 +81,29 @@ class LoopPractice {
     */
     public void method3() {
     	
-    	int num = 0;
-    	
+    
     	int count = 0;
     	
     	System.out.print("문자열을 입력하시오 > ");
     	String str = sc.nextLine();
     	
     	System.out.print("검색할 문자를 입력하시오 > ");
-    	String str1 = sc.nextLine();
-    	
-        int str2 = str.length();	
+    	char str1 = sc.next().charAt(0);
 
-   		while(str.equals(str1)) {
-   			for(int i = 0; i>str2; i++) {
-   				
-   			}
-   			count++;
-   		}
-   		System.out.println(str+" 안에 포함된 "+str1+" 개수 : "+count);
+          for(int i=0; i<str.length(); i++) {
+      		if(str.charAt(i)==str1) {
+      			count++;
+      		}
+      	}
+      	System.out.println(str+" 안에 포함된 "+str1+" 개수: " + count);
+      }
+        
+      
 
-    }
+    
 
     /*
-        0이 나올 때까지 숫자를 출력하시오. (random 사용! 1~10)
+        0이 나올 때까지 숫자를 출력하시오. (random 사용! 0~10)
         7
         3
         4
@@ -116,27 +115,8 @@ class LoopPractice {
     public void method4() {
     	
     	
-    	double random = Math.random();   	
-    	 random = Math.random()*10;    	
-    	 int number=(int) random;
-    	 
-    	
-    	for(int i = 0; i != number; ) {
-    		
-    		if(number!=0) {
-    			System.out.println(number);
-    			
-    		}else {
-    			break;
-    		}
-    	}
     	
     	
-    	
-    	
-    	
-    	
-
     }
 
     /*
@@ -152,12 +132,22 @@ class LoopPractice {
      */
     public void method5() {
     	
+    	int count1 =0;
     	
     	
     	
-    	
+    
+    	for( int i =1; i<=10; i++) {
+    	double random = ( Math.random()*6)+1;   	
+
 
     }
+    	for(int a = 1; a == 1;) { 
+    		count1++;
+    	}System.out.println(" 1 : "+count1 );
+    	
+    }
+    
 
     /*
         사용자의 이름을 입력하고 컴퓨터와 가위바위보를 하세요. 

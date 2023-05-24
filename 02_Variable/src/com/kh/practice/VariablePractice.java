@@ -10,9 +10,9 @@ public class VariablePractice {
 		VariablePractice vp = new VariablePractice();
 		
 	//	vp.method1();
-	//	vp.method2();
+		vp.method2();
 	//	vp.method3();
-		vp.method4();
+	//	vp.method4();
 	}
 		
 		public void method1() {
@@ -136,14 +136,13 @@ public class VariablePractice {
 		
 		System.out.print("문자열을 입력하세요 : ");
 		String num1 = sc.nextLine();
+		
 	System.out.println("첫번째 문자 : " + num1.charAt(0));
-	char first = num1.charAt(0);
 	
 	int num = num1.length();
 	
-	
-	System.out.println("마지막 문자 : " + num1.charAt(num));
-	char last =  num1.charAt(0);	
+	System.out.println("마지막 문자 : " + num1.charAt(num-1));
+		
 			
 	
 	

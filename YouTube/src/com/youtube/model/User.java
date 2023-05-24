@@ -14,22 +14,22 @@ public class User {
 	
 	
 	
-	public void login() { // 로그인
-		
+	public boolean login() { // 로그인		
+		return false;
 	}
 	
-	public void signUp() { // 회원가입
+	public boolean signUp() { // 회원가입
+		return false;
+	}
+	public User viewProfile() { // 프로필 보기
+		return null;
+	}
+	public User updateProfile() { // 프로필 수정
+		return null;
 		
 	}
-	public void viewProfile() { // 프로필 보기
-		
-	}
-	public void updateProfile() { // 프로필 수정
-		
-		
-	}
-	public void deleteProfile() { // 계정 삭제
-		
+	public boolean deleteProfile() { // 계정 삭제
+		return false;
 		
 	}
 	

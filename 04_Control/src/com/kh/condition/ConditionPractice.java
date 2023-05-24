@@ -12,17 +12,23 @@ public class ConditionPractice {
 		ConditionPractice c = new ConditionPractice();
 		
 		
+		//   1. num > 0이 공통적으로 조건식에 들어가기에 이 경우 중첩 if문으로 빼셔도 좋아요~
+		//   3. 나머지가 0인지 아닌지만 판단해도 될거에요!
+		//   4. 불합격입니다 출력하는 부분들 하나의 조건식으로 해결 할 수 있어요! 연산자에서 어떤 걸 사용하면 좋을지 고민!
+		//   7. 공통적으로 들어가는 조건식은 바깥으로 중첩 if문으로 빼시는 것 추천!
+		//   8.앞에 if문들에 의해서 걸러져서 마지막 else if 대신 else만 써도 괜찮아요!  
 		
 		
 		
-	//	c.practice1();     
-	//	c.practice2();
-	//	c.practice3();     
-	//	c.practice4();          
+		
+	//	c.practice1();      조건을 간결화하고 중첩으로 뺐습니다!
+	//	c.practice2();      
+	//	c.practice3();      불필요한 조건을 하나 뺏습니다! 
+	//	c.practice4();      논리 연산자를 사용하여 묶어보았습니다!
 	//	c.practice5();     
 	//	c.practice6();
-	//	c.practice7();     
-	//	c.practice8();
+	//	c.practice7();      피드백 받아서 해보았습니다!!
+	//	c.practice8();      확인 감사드립니다! 변경 하였습니다.
 	//	c.practice9();     
 	//	c.practice10();
 	//	c.practice11();    
@@ -45,10 +51,13 @@ public class ConditionPractice {
     	
         System.out.print("정수 > ");
         int num=sc.nextInt();
+       
         
-       if(num%2 != 1 && num > 0) {
+        if(num > 0) {
+        
+       if(num%2 != 1 ) {
     	   System.out.println("짝수다");
-       }else if(num%2 != 0 && num > 0) {
+       }else
     	   System.out.println("홀수다");
     		   
     	   }else { 
@@ -114,11 +123,11 @@ public class ConditionPractice {
     	
     	if( num1 <= 0 ) {
     		System.out.println(num);
-    	} else if(num1 >= 0){ 
+    	} else
     		System.out.println(num+1);
     	}
     
-    }
+    
 
     /*
         국어, 영어, 수학 세 과목의 점수를 키보드로 입력 받고 합계와 평균을 계산하고
@@ -165,12 +174,8 @@ public class ConditionPractice {
     	
     	
     	
-    	if(ko <= 40) {
-    		System.out.println("불합격입니다.");
-    	}else if(en <= 40) {
-    		System.out.println("불합격입니다.");
-    	}else if(ma <= 40) {
-    		System.out.println("불합격입니다.");
+    	if(ko <= 40 && en<=40 && ma <= 40) {
+    	
     	}else if(aver >= 60) {
     	System.out.println("국어 : "+ko);	
     	System.out.println("수학 : "+ma);	
@@ -291,16 +296,16 @@ public class ConditionPractice {
     	int pw = sc.nextInt();
     	
     
-    	if("happy".equals(id) && pw == 1234 ) {
-    		System.out.println("로그인 성공!");
-    	}else if(id != "happy"  && pw == 1234) {
-    		System.out.println("아이디가 틀렸습니다.");
-    	}else   {
-    		System.out.println("비밀번호가 틀렸습니다");
-    	}
-    	
-    	
-    	
+		if (pw == 1234) {
+			if ("happy".equals(id)) {
+				System.out.println("로그인 성공!");
+			} else if (id != "happy") {
+				System.out.println("아이디가 틀렸습니다.");
+			}
+
+		} else {
+			System.out.println("비밀번호가 틀렸습니다");
+		}
     	
     	
     	
@@ -344,21 +349,12 @@ public class ConditionPractice {
     		System.out.println("과체중");
     	}else if ( bmi <30) {
     		System.out.println("비만");
-    	}else if (bmi >= 30) {
+    	}else   
     		System.out.println("고도비만");
     	}
     	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
        
-    }
+    
 
     /*
         키보드로 두 개의 양수와 연산 기호를 입력 받아 연산 기호에 맞춰 연산 결과를 출력하세요.

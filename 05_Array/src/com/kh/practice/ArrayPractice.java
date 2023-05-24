@@ -15,7 +15,7 @@ public class ArrayPractice {
 	
 //	a.method1();
 //	a.method2();
-//	a.method3();
+	a.method3();
 //	a.method4();
 //	a.method5();
 	}
@@ -89,19 +89,17 @@ public class ArrayPractice {
 		
 		String[] food = {"김","고기","치킨"};
 				
-		for(int i = 0; i<food.length; i++ ) {
+		for(int i = 0; i<3; i++ ) {
 						
 			if(name.equals(food[i])) {
-			    System.out.println("배달 가능");       
-	              	      	
-	        }
-			 break; 
+			    System.out.println("배달 가능");
+			    break;
+			    
+		}else {System.out.println("배달 불가능");
+			
 		}
 	
-		System.out.println("배달 불가능");
-		
-		
-		
+			}     					 	
 	}
 	
 	/*
