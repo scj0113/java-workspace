@@ -24,7 +24,7 @@ public class ConditionPractice {
 	//	c.practice1();      조건을 간결화하고 중첩으로 뺐습니다!
 	//	c.practice2();      
 	//	c.practice3();      불필요한 조건을 하나 뺏습니다! 
-	//	c.practice4();      논리 연산자를 사용하여 묶어보았습니다!
+	//	c.practice4();      //논리 연산자를 사용하여 묶어보았습니다!
 	//	c.practice5();     
 	//	c.practice6();
 	//	c.practice7();      피드백 받아서 해보았습니다!!
@@ -168,23 +168,16 @@ public class ConditionPractice {
     	
     	int to = (ko+en+ma);
     	
-    	
-    	
-    	
-    	
-    	
-    	
-    	if(ko <= 40 && en<=40 && ma <= 40) {
-    	
-    	}else if(aver >= 60) {
-    	System.out.println("국어 : "+ko);	
-    	System.out.println("수학 : "+ma);	
-    	System.out.println("영어 : "+en);	
-    	System.out.println("합계 : "+to);	
-    	System.out.println("평균 : "+aver);	
-    	System.out.println("축하합니다, 합격입니다!");	
+    	if(ko >= 40 && en >= 40 && ma >= 40 && aver >= 60) {
+    	 	System.out.println("국어 : "+ko);	
+        	System.out.println("수학 : "+ma);	
+        	System.out.println("영어 : "+en);	
+        	System.out.println("합계 : "+to);	
+        	System.out.println("평균 : "+aver);	
+        	System.out.println("축하합니다, 합격입니다!");	  		
     	} else {
     		System.out.println("불합격입니다.");
+    		
     	}
     	
     	

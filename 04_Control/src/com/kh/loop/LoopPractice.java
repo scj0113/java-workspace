@@ -13,8 +13,8 @@ class LoopPractice {
 //	     l.method2();
 //	     l.method3();
 //	     l.method4();
-	     l.method5();
-//	     l.method6();
+//	     l.method5();
+	     l.method6();
 	
 	
 	
@@ -114,10 +114,14 @@ class LoopPractice {
      */
     public void method4() {
     	
-    	
-    	
+
     	
     }
+    	
+    	
+    	
+    	
+    
 
     /*
         주사위를 10번 굴렸을 때 각 눈의 수가 몇 번 나왔는지 출력하세요. (random 사용!)
@@ -132,21 +136,11 @@ class LoopPractice {
      */
     public void method5() {
     	
-    	int count1 =0;
-    	
-    	
-    	
-    
-    	for( int i =1; i<=10; i++) {
-    	double random = ( Math.random()*6)+1;   	
+	
+		
+		
 
-
-    }
-    	for(int a = 1; a == 1;) { 
-    		count1++;
-    	}System.out.println(" 1 : "+count1 );
-    	
-    }
+	}
     
 
     /*
@@ -173,10 +167,11 @@ class LoopPractice {
     */
     public void method6() {
     	
-    	
-    	
-    	
-
+    	System.out.print("당신의 이름을 입력해주세요 : ");
+    	String name=sc.nextLine();
+    	System.out.print("가위바위보 : ");
+    	String str = sc.nextLine();
+ 
     }
 
 }

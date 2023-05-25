@@ -81,26 +81,31 @@ public class ArrayPractice {
 	 * 사용자가 입력한 값이 배열에 있으면 "배달 가능", 없으면 "배달 불가능"을 출력하세요.
 	 * 
 	 * */
+	
+	
+	
 	public void method3() {
 		
-		System.out.print("음식 메뉴를 적어주세요 : ");
-		String name = sc.nextLine();
+		
+		String[] arr = {"김","밥","고기"};
 		
 		
-		String[] food = {"김","고기","치킨"};
-				
-		for(int i = 0; i<3; i++ ) {
-						
-			if(name.equals(food[i])) {
-			    System.out.println("배달 가능");
-			    break;
-			    
-		}else {System.out.println("배달 불가능");
+		
+		System.out.print("음식 메뉴 : ");
+		String str = sc.nextLine();
+		
+		
+		for(int i =0; i<3; i++) {
 			
 		}
+			
+		
 	
-			}     					 	
+		
+		
+		
 	}
+		
 	
 	/*
 	 * 
@@ -111,6 +116,7 @@ public class ArrayPractice {
 	 * 123456-1******
 	 * 
 	 * */
+	
 	public void method4() {
 		
 		System.out.print("주민등록번호 : ");
@@ -152,15 +158,17 @@ public class ArrayPractice {
 	 * gnimmargorp
 	 * 
 	 * */
+	
 	public void method5() {
 		
 		
 		System.out.print("단어 입력 : ");
-		String name = sc.nextLine();
-		
-		
-		
-		
+		String str = sc.nextLine();
+
+		for (int i = str.length() - 1; i >= 0; i--) {
+			System.out.print(str.charAt(i));
+		}
 	}
-	
+
 }
+
