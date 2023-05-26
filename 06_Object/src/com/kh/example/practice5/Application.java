@@ -49,7 +49,7 @@ public class Application {
 			System.out.println("2. 사원 정보 수정");
 			System.out.println("3. 사원 정보 출력");
 			System.out.println("9. 프로그램 종료");			
-			System.out.print("메뉴 번호를 누르세요 :	");			
+			System.out.print("메뉴 번호를 누르세요 : ");			
 			return Integer.parseInt(sc.nextLine());	
 		}	
 		
@@ -95,7 +95,7 @@ public class Application {
 	     	System.out.println("2. 사원 연봉");
 			System.out.println("3. 보너스 율");
 			System.out.println("9. 돌아가기");
-			System.out.print("메뉴 번호를 누르세요 :	");	
+			System.out.print("메뉴 번호를 누르세요 : ");	
 			int select = Integer.parseInt(sc.nextLine());		
 
 			
