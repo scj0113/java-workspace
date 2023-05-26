@@ -14,7 +14,7 @@ class LoopPractice {
 //	     l.method3();
 //	     l.method4();
 //	     l.method5();
-	     l.method6();
+//	     l.method6();
 	
 	
 	
@@ -166,6 +166,9 @@ class LoopPractice {
         이겼습니다 !
     */
     public void method6() {
+    	
+    	
+    	
     	
     	System.out.print("당신의 이름을 입력해주세요 : ");
     	String name=sc.nextLine();

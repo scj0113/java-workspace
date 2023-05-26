@@ -94,12 +94,6 @@ public class ArrayPractice {
 		System.out.print("음식 메뉴 : ");
 		String str = sc.nextLine();
 		
-		
-		for(int i =0; i<3; i++) {
-			
-		}
-			
-		
 	
 		
 		

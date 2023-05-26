@@ -94,11 +94,8 @@ public class User {
 				+ nickName + ", gender=" + gender + "]";
 	}
 	
-
 	
 	
-	
-
 }
 
 
