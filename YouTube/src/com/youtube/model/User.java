@@ -14,6 +14,10 @@ public class User {
 	private char gender;
 	
 	
+	Video video;
+	
+	
+	
 	public User() {
 	}
 
