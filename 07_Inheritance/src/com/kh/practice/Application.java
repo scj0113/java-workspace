@@ -22,13 +22,8 @@ public class Application {
 		
 		Application app = new Application();				
 		app.mainMenu();
-		
 	
 		
-		
-		
-		
-
 		}
 
 	public void mainMenu() {
