@@ -88,17 +88,25 @@ public class ArrayPractice {
 		
 		
 		String[] arr = {"김","밥","고기"};
-		
-		
-		
+	
 		System.out.print("음식 메뉴 : ");
 		String str = sc.nextLine();
 		
+		
+		for(String abc : arr) {
+			if(str.equals(arr)) {
+				System.out.println("배달가능");
+			
+			}
+				System.out.println("배달 불가능");
+				break;
+			
+		}
+		
+		
+	}	
 	
-		
-		
-		
-	}
+	
 		
 	
 	/*

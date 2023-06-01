@@ -114,6 +114,10 @@ class LoopPractice {
      */
     public void method4() {
     	
+    	
+    	
+    	
+    	
 
     	
     }

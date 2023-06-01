@@ -2,30 +2,37 @@ package com.youtube.controller;
 
 import com.youtube.model.User;
 
-public class UserController {
+public class UserController implements UserControllerImpl{
+
+	@Override
+	public boolean login() {
+		return false;
+	}
+
+	@Override
+	public boolean signUp() {
+		return false;
+	}
+
+	@Override
+	public User viewProfile() {
+		return null;
+	}
+
+	@Override
+	public User updateProfile() {
+		return null;
+	}
+
+	@Override
+	public boolean deleteProfile() {
+		return false;
+	}
 
 	
 	
 	
-	public boolean login() { // 로그인		
-		return false;
-	}
 	
-	public boolean signUp() { // 회원가입
-		return false;
-	}
-	public User viewProfile() { // 프로필 보기
-		return null;
-	}
-	public User updateProfile() { // 프로필 수정
-		return null;
-		
-	}
-	public boolean deleteProfile() { // 계정 삭제
-		return false;
-
-		
-	}
 	
 	
 }
