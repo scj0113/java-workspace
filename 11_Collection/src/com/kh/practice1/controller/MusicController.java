@@ -104,6 +104,7 @@ public ArrayList<Music> ascTitle(){
 }
 
 public ArrayList<Music> descArist() {
+	
 	ArrayList<Music> list = (ArrayList<Music>)this.list.clone();
 	
 	Collections.sort(list, new ArtistAscending().reversed());
