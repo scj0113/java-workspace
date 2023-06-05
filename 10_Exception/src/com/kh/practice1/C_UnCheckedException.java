@@ -20,8 +20,8 @@ public class C_UnCheckedException {
 
 	//	c.method1();
 	//	c.method2();
-	//	c.method3();
-		c.method4();
+		c.method3();
+//		c.method4();
 		
 	}
 	
