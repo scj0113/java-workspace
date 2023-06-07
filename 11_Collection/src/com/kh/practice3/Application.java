@@ -135,7 +135,7 @@ public class Application {
 		System.out.print("추가할 수량 : ");
 		int amount = Integer.parseInt(sc.nextLine());
 		
-		fc.addNewKind(new Farm(name, name) , amount);
+		
 			
 			System.out.println("새 농산물이 추가되었습니다.");
 		
