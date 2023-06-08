@@ -1,5 +1,7 @@
 package com.youtube.model;
 
+import java.util.List;
+
 public class User {
 	
 	//CRUD : Creat, Read, Update, Delete
@@ -14,22 +16,7 @@ public class User {
 	private char gender;
 	
 	
-	Video video;
-	
-	
-	
-	public User() {
-	}
-
-
-	public User(String email, String phone, String id, String password, String nickName, char gender) {
-		this.email = email;
-		this.phone = phone;
-		this.id = id;
-		this.password = password;
-		this.nickName = nickName;
-		this.gender = gender;
-	}
+	private List<Video> video;
 
 
 	public String getEmail() {
@@ -92,11 +79,16 @@ public class User {
 	}
 
 
-	@Override
-	public String toString() {
-		return "User [email=" + email + ", phone=" + phone + ", id=" + id + ", password=" + password + ", nickName="
-				+ nickName + ", gender=" + gender + "]";
+	public List<Video> getVideo() {
+		return video;
 	}
+
+
+	public void setVideo(List<Video> video) {
+		this.video = video;
+	}
+	
+	
 	
 	
 	
