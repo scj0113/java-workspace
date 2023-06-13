@@ -209,6 +209,7 @@ public class A_Date {
 		String yyyy = strArr[0];
 		String MM = strArr[1];
 		String dd = strArr[2];
+		
 		Calendar date = Calendar.getInstance();
 		
 		
