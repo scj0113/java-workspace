@@ -1,7 +1,13 @@
 package com.spotv.controller;
 
+import java.util.ArrayList;
+
+import com.spotv.model.Info;
+
 public class InfoController {
 	
+	
+	ArrayList<Info> player = new ArrayList<>();
 	
 	// C
     public void addPlayerInfo() {                     // 선수 정보 추가
@@ -9,6 +15,7 @@ public class InfoController {
     }
 	
 	public void addTeamInfo() {                       // 팀 정보 추가
+		
 		
 	}
 	
