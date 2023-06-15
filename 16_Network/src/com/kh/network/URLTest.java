@@ -1,5 +1,8 @@
 package com.kh.network;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -24,7 +27,8 @@ public class URLTest {
 	public static void main(String[] args) {
 
 		URLTest u = new URLTest();
-		u.method1();
+//		u.method1();
+		u.method2();
 		
 	}
 
@@ -46,4 +50,42 @@ public class URLTest {
 		
 		
 	}
+	
+	
+	public void method2() {
+		BufferedReader input = null;
+		
+		
+		try {
+			URL url = new URL("https://iei.or.kr");
+			input = new BufferedReader(new InputStreamReader(url.openStream()));
+			
+			String line = "";
+			while((line = input.readLine()) != null ) {
+				System.out.println(line);
+			}
+			
+			
+			
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				input.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
 }
