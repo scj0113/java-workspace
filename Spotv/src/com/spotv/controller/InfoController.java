@@ -10,7 +10,7 @@ public class InfoController {
 	ArrayList<Info> player = new ArrayList<>();
 	
 	// C
-    public void addPlayerInfo() {                     // 선수 정보 추가
+    public void addPlayerInfo(String name, String teamName) {                     // 선수 정보 추가
 	
     }
 	
