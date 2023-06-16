@@ -15,8 +15,8 @@ public class UserController {
 		this.user = user;
 	}
 	
-	public boolean login(String id, String password) {                                          // 로그인
-		if(user != null && user.getId().equals(id) && user.getPassword().equals(password)) {
+	public boolean login(String id, String password) {                                          
+		if(user != null && user.getId().equals(id) && user.getPassword().equals(password)) {    // 로그인
 		return true;
 	}
 	  return false;
